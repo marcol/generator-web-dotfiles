@@ -10,7 +10,7 @@ describe('Test eslint', function () {
   it('checks eslint files contents', () => {
     assert.jsonFileContent(path.join(__dirname, '.tmp/package.json'), {
       scripts: {
-        test: 'mocha \'test/index.js\''
+        'lint:js': 'eslint .; exit 0'
       }
     })
   })

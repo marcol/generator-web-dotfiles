@@ -1,0 +1,22 @@
+{
+  "name": "<%= project %>",
+  "version": "0.1.0",
+  "description": "Check out my new project: <%= project %>",
+  "keywords": [],
+  "homepage": "",
+  "bugs": "",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "ISC",
+  "author": "<%= name %> <<%= email %>>",
+  "scripts": {
+    "lint": "npm run lint:js && npm run lint:md && npm run lint:css",
+    "lint:css": "stylelint **/*.html **/*.css; exit 0",
+    "lint:js": "eslint .; exit 0",
+    "lint:md": "remark .; exit 0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

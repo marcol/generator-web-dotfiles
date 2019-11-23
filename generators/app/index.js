@@ -1,5 +1,5 @@
 const Generator = require('yeoman-generator')
-// const chalk = require('chalk')
+const chalk = require('chalk')
 
 class Uncomplicated extends Generator {
   /**
@@ -16,18 +16,9 @@ class Uncomplicated extends Generator {
    * @return void
    */
   async prompting () {
-    // const prompts = require('./priorities/prompting')(this)
-    // this.log(chalk.bold('\nWe need some input from you to setup your project'))
-    // this.answers = await this.prompt(prompts)
-  }
-
-  /**
-   * Saving configurations and configure the project (creating .editorconfig
-   * files and other metadata files)
-   * @return void
-   */
-  configuring () {
-    // require('./priorities/configuring')(this)
+    const prompts = require('./prompting')(this)
+    this.log(chalk.bold.black.bgWhite('\n Setup '), chalk.bold('We need some input from you to setup your project'))
+    this.answers = await this.prompt(prompts)
   }
 
   /**
@@ -35,7 +26,7 @@ class Uncomplicated extends Generator {
    * @return void
    */
   writing () {
-    // require('./priorities/writing')(this)
+    require('./writing')(this)
   }
 
   /**
@@ -43,7 +34,7 @@ class Uncomplicated extends Generator {
    * @return void
    */
   install () {
-    // require('./priorities/install')(this)
+    // require('./install')(this)
   }
 
   /**

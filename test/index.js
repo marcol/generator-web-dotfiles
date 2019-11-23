@@ -1,7 +1,7 @@
 const helpers = require('yeoman-test')
 const path = require('path')
 const rimraf = require('rimraf')
-// const prompts = require('./config/prompts')
+const prompts = require('./config/prompts')
 
 describe('Uncomplicated generator tests\n\n', function () {
   this.timeout(120000)
@@ -9,7 +9,7 @@ describe('Uncomplicated generator tests\n\n', function () {
   before(() => {
     return helpers.run(path.join(__dirname, '../generators/app'))
       .inDir(path.join(__dirname, '.tmp'))
-      // .withPrompts(prompts)
+      .withPrompts(prompts)
       .withOptions({
         'skip-install': false
       })
@@ -19,7 +19,7 @@ describe('Uncomplicated generator tests\n\n', function () {
       })
   })
 
-  require('./eslint')
+  require('./package')
 
   after(() => {
     rimraf.sync(path.join(__dirname, '.tmp'))
