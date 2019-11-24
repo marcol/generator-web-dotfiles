@@ -20,3 +20,11 @@ npm install -g generator-web-dotfiles
 Finally, run `yo web-dotfiles` and follow the instructions.
 
 ## Features
+*   `package.json` automatic configuration
+*   ISC license
+*   README with name of the project
+*   Pre-populated `.gitignore`
+*   NPM configuration `.npmrc`
+*   JavaScript linting through [Eslint](https://eslint.org/) with [standard](https://standardjs.com/) configuration (`.eslintrc.json`, `.eslintignore`)
+*   CSS linting through [Stylelint](https://github.com/stylelint/stylelint) with [standard](https://github.com/stylelint/stylelint-config-standard) configuration (`.stylelintrc.json`, `.stylelintignore`)
+*   Markdown linting through [Remark](https://github.com/remarkjs/remark-lint) with [markdown style guide](https://github.com/remarkjs/remark-lint/tree/master/packages/remark-preset-lint-markdown-style-guide) configuration (`.remarkrc.js`)

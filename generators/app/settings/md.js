@@ -11,7 +11,7 @@ module.exports = {
   dependencies: [
     'remark-cli',
     'remark-lint',
-    'remark-preset-lint-recommended'
+    'remark-preset-lint-markdown-style-guide'
   ],
   scripts: {
     'lint:md': 'remark .; exit 0',
