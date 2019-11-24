@@ -11,6 +11,7 @@ const tests = [
   './eslint',
   './css',
   './md',
+  './all',
   './nofiles'
 ]
 

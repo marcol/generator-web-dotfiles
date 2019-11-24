@@ -2,6 +2,11 @@ const Generator = require('yeoman-generator')
 const chalk = require('chalk')
 
 class Uncomplicated extends Generator {
+  constructor (args, opts) {
+    super(args, opts)
+    this.option('all')
+  }
+
   /**
    * Initialization methods (checking current project state, getting
    * configs, etc)
@@ -16,6 +21,21 @@ class Uncomplicated extends Generator {
    * @return void
    */
   async prompting () {
+    // accept all if options is set
+    if (this.options.all) {
+      this.answers = {
+        package: true,
+        css: true,
+        eslint: true,
+        git: true,
+        license: true,
+        md: true,
+        npm: true,
+        readme: true
+      }
+      return
+    }
+
     const prompts = require('./prompting')(this)
     this.log(chalk.bold.black.bgWhite('\n Setup '),
       chalk.bold('We need some input from you to setup your project'))

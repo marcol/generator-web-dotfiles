@@ -19,6 +19,13 @@ npm install -g generator-web-dotfiles
 
 Finally, run `yo web-dotfiles` and follow the instructions.
 
+### Options
+You can accept all config files and escape the question by using the option
+`all`:
+```
+yo web-dotfiles --all
+```
+
 ## Features
 *   `package.json` automatic configuration
 *   ISC license
