@@ -17,7 +17,8 @@ class Uncomplicated extends Generator {
    */
   async prompting () {
     const prompts = require('./prompting')(this)
-    this.log(chalk.bold.black.bgWhite('\n Setup '), chalk.bold('We need some input from you to setup your project'))
+    this.log(chalk.bold.black.bgWhite('\n Setup '),
+      chalk.bold('We need some input from you to setup your project'))
     this.answers = await this.prompt(prompts)
   }
 

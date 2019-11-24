@@ -1,18 +1,14 @@
 const assert = require('yeoman-assert')
 const path = require('path')
-const target = 'test/index.js'
+const config = require('../generators/app/settings/eslint')
 
 describe('Test eslint', function () {
   it('checks if eslint files are present', () => {
-    assert.file(target)
+    assert.file(config.files)
   })
 
   it('checks eslint files contents', () => {
-    assert.jsonFileContent(path.join(__dirname, '.tmp/package.json'), {
-      scripts: {
-        'lint:js': 'eslint .; exit 0'
-      }
-    })
+    assert.jsonFileContent(path.join(__dirname, '.tmp/package.json'), config.package)
   })
 })
 

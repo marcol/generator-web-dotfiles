@@ -1,11 +1,11 @@
 module.exports = function (gen) {
-  let deps = []
+  var data = {}
 
   Object.entries(gen.answers).forEach((cur) => {
     if (cur[1]) {
-      deps = deps.concat(require('./settings/' + cur[0]).dependencies)
+      data[cur[0]] = require('./settings/' + cur[0]).package
     }
   })
 
-  return deps
+  return data
 }

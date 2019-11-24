@@ -1,4 +1,9 @@
 module.exports = {
-  files: [],
-  dependencies: []
+  files: [
+    'LICENSE'
+  ],
+  dependencies: [],
+  package: {
+    license: 'ISC'
+  }
 }

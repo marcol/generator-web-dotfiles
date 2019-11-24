@@ -1,10 +1,11 @@
-
 module.exports = function (gen) {
-  const files = require('./settings/package.js').files
+  let files = []
 
-  if (gen.eslint) {
-    files.push(require('./settings/eslint').files)
-  }
+  Object.entries(gen.answers).forEach((cur) => {
+    if (cur[1]) {
+      files = files.concat(require('./settings/' + cur[0]).files)
+    }
+  })
 
   return files
 }

@@ -1,7 +1,7 @@
 {
   "name": "<%= project %>",
   "version": "0.1.0",
-  "description": "Check out my new project: <%= project %>",
+  "description": "<%= project %>",
   "keywords": [],
   "homepage": "",
   "bugs": "",
@@ -9,14 +9,8 @@
     "type": "",
     "url": ""
   },
-  "license": "ISC",
-  "author": "<%= name %> <<%= email %>>",
-  "scripts": {
-    "lint": "npm run lint:js && npm run lint:md && npm run lint:css",
-    "lint:css": "stylelint **/*.html **/*.css; exit 0",
-    "lint:js": "eslint .; exit 0",
-    "lint:md": "remark .; exit 0"
-  },
+  "author": "<% if (name) { %><%= name %><% } %><% if (email) { %> <<%= email %>><% } %>",
+  "scripts": {},
   "dependencies": {},
   "devDependencies": {}
 }
