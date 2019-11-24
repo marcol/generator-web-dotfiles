@@ -15,7 +15,7 @@ const tests = [
   './nofiles'
 ]
 
-describe('Uncomplicated generator tests\n\n', function () {
+describe('Web-dotfiles generator tests\n\n', function () {
   this.timeout(120000)
 
   before(() => {
