@@ -5,6 +5,7 @@
   "keywords": [],
   "homepage": "",
   "bugs": "",
+  "license": "<%- license %>",
   "repository": {
     "type": "",
     "url": ""

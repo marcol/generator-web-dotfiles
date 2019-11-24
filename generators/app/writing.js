@@ -7,7 +7,8 @@ module.exports = function (gen) {
     project: str.sanitize.addUnderscore(gen.appname),
     name: gen.user.git.name() || '',
     email: gen.user.git.email() || '',
-    year: (new Date().getFullYear())
+    year: (new Date().getFullYear()),
+    license: (gen.answers.license) ? 'ISC' : ''
   }
 
   // set package json configuration

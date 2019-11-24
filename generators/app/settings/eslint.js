@@ -2,7 +2,7 @@ module.exports = {
   prompt: {
     type: 'confirm',
     name: 'eslint',
-    message: 'Add eslint',
+    message: 'Add eslint?',
     default: true
   },
   files: [

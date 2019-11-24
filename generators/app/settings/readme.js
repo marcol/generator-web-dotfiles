@@ -1,12 +1,12 @@
 module.exports = {
   prompt: {
     type: 'confirm',
-    name: 'gitignore',
-    message: 'Add .gitignore',
+    name: 'readme',
+    message: 'Add README?',
     default: true
   },
   files: [
-    '.gitignore'
+    'README.md'
   ],
   dependencies: []
 }
