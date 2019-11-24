@@ -10,6 +10,12 @@ describe('Test Stylelint', function () {
   it('checks package.json css lint script', () => {
     assert.fileContent(path.join(__dirname, '.tmp/package.json'), new RegExp('lint:css'))
   })
+
+  it('checks package.json css lint dependencies', () => {
+    config.dependencies.forEach((cur) => {
+      assert.fileContent(path.join(__dirname, '.tmp/package.json'), new RegExp(cur))
+    })
+  })
 })
 
 module.exports = null

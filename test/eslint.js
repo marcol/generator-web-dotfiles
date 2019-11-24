@@ -10,6 +10,12 @@ describe('Test eslint', function () {
   it('checks package.json eslint script', () => {
     assert.fileContent(path.join(__dirname, '.tmp/package.json'), new RegExp('lint:js'))
   })
+
+  it('checks package.json eslint dependencies', () => {
+    config.dependencies.forEach((cur) => {
+      assert.fileContent(path.join(__dirname, '.tmp/package.json'), new RegExp(cur))
+    })
+  })
 })
 
 module.exports = null

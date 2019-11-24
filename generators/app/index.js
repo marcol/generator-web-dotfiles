@@ -35,7 +35,7 @@ class Uncomplicated extends Generator {
    * @return void
    */
   install () {
-    // require('./install')(this)
+    require('./install')(this)
   }
 
   /**

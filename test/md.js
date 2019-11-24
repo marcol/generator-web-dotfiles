@@ -10,6 +10,12 @@ describe('Test Markdown linting', function () {
   it('checks package.json Markdown lint script', () => {
     assert.fileContent(path.join(__dirname, '.tmp/package.json'), new RegExp('lint:md'))
   })
+
+  it('checks package.json Markdown lint dependencies', () => {
+    config.dependencies.forEach((cur) => {
+      assert.fileContent(path.join(__dirname, '.tmp/package.json'), new RegExp(cur))
+    })
+  })
 })
 
 module.exports = null
