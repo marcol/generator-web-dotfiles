@@ -23,10 +23,8 @@ module.exports = {
     'eslint-plugin-standard',
     'eslint-config-standard'
   ],
-  package: {
-    scripts: {
-      'lint:js': 'eslint .; exit 0',
-      lint: 'npm run lint:js'
-    }
+  scripts: {
+    'lint:js': 'eslint .; exit 0',
+    lint: 'npm run lint:js'
   }
 }

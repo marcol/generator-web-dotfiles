@@ -8,7 +8,9 @@ describe('Test eslint', function () {
   })
 
   it('checks eslint files contents', () => {
-    assert.jsonFileContent(path.join(__dirname, '.tmp/package.json'), config.package)
+    assert.jsonFileContent(path.join(__dirname, '.tmp/package.json'), {
+      scripts: config.scripts
+    })
   })
 })
 

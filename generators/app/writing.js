@@ -7,11 +7,11 @@ module.exports = function (gen) {
     project: str.sanitize.addUnderscore(gen.appname),
     name: gen.user.git.name() || '',
     email: gen.user.git.email() || '',
-    year: (new Date().getFullYear()),
-    config: require('./configuring')(gen)
+    year: (new Date().getFullYear())
   }
 
-  console.log('data', data)
+  // set package json configuration
+  data.scripts = JSON.stringify(require('./scripts')(gen))
 
   gen.log(chalk.bold.black.bgWhite('\n Writing '), chalk.bold('Creating the necessary files...'))
 

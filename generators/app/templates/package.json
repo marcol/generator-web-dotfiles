@@ -10,7 +10,7 @@
     "url": ""
   },
   "author": "<% if (name) { %><%= name %><% } %><% if (email) { %> <<%= email %>><% } %>",
-  "scripts": {},
+  "scripts": <%- scripts %>,
   "dependencies": {},
   "devDependencies": {}
 }
