@@ -2,6 +2,17 @@ const helpers = require('yeoman-test')
 const path = require('path')
 const rimraf = require('rimraf')
 const prompts = require('./config/prompts')
+const tests = [
+  './package',
+  './license',
+  './readme',
+  './git',
+  './npm',
+  './eslint',
+  './css',
+  './md',
+  './nofiles'
+]
 
 describe('Uncomplicated generator tests\n\n', function () {
   this.timeout(120000)
@@ -19,13 +30,7 @@ describe('Uncomplicated generator tests\n\n', function () {
       })
   })
 
-  require('./package')
-  require('./license')
-  require('./readme')
-  require('./git')
-  require('./npm')
-  require('./eslint')
-  require('./nofiles')
+  tests.forEach((test) => require(test))
 
   after(() => {
     rimraf.sync(path.join(__dirname, '.tmp'))

@@ -7,10 +7,8 @@ describe('Test eslint', function () {
     assert.file(config.files)
   })
 
-  it('checks eslint files contents', () => {
-    assert.jsonFileContent(path.join(__dirname, '.tmp/package.json'), {
-      scripts: config.scripts
-    })
+  it('checks package.json eslint script', () => {
+    assert.fileContent(path.join(__dirname, '.tmp/package.json'), new RegExp('lint:js'))
   })
 })
 

@@ -6,7 +6,7 @@ module.exports = function (gen) {
 
     if (cur[1] && scripts) {
       Object.keys(scripts).forEach((key) => {
-        if (data.key) {
+        if (data[key]) {
           data[key] = [data[key], scripts[key]].join('; ')
         } else {
           data[key] = scripts[key]

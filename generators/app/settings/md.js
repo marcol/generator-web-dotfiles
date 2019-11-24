@@ -2,9 +2,19 @@ module.exports = {
   prompt: {
     type: 'confirm',
     name: 'md',
-    message: 'Add markdown config?',
+    message: 'Add markdown linting?',
     default: true
   },
-  files: [],
-  dependencies: []
+  files: [
+    '.remarkrc.js'
+  ],
+  dependencies: [
+    'remark-cli',
+    'remark-lint',
+    'remark-preset-lint-recommended'
+  ],
+  scripts: {
+    'lint:md': 'remark .; exit 0',
+    lint: 'npm run lint:md'
+  }
 }

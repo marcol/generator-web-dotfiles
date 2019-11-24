@@ -5,10 +5,9 @@ module.exports = function (gen) {
     'readme',
     'git',
     'npm',
-    'eslint'
-    // 'css'
-    // html
-    // md
+    'eslint',
+    'css',
+    'md'
   ]
 
   return setts.map((cur) => require('./settings/' + cur).prompt)

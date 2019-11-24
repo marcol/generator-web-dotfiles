@@ -20,7 +20,6 @@ describe('Test no to all', function () {
     require('../generators/app/settings/css').files,
     require('../generators/app/settings/eslint').files,
     require('../generators/app/settings/git').files,
-    require('../generators/app/settings/html').files,
     require('../generators/app/settings/license').files,
     require('../generators/app/settings/md').files,
     require('../generators/app/settings/npm').files,
