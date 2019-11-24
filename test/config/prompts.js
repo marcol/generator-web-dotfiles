@@ -1,4 +1,3 @@
 module.exports = {
-  project: ' tmp',
-  package: true
+  project: ' tmp'
 }

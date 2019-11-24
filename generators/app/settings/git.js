@@ -1,8 +1,8 @@
 module.exports = {
   prompt: {
     type: 'confirm',
-    name: 'gitignore',
-    message: 'Add .gitignore',
+    name: 'git',
+    message: 'Add .gitignore?',
     default: true
   },
   files: [

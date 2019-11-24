@@ -5,6 +5,8 @@ module.exports = {
     message: 'Add NPM config?',
     default: true
   },
-  files: [],
+  files: [
+    '.npmrc'
+  ],
   dependencies: []
 }

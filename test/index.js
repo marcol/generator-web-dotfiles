@@ -20,8 +20,12 @@ describe('Uncomplicated generator tests\n\n', function () {
   })
 
   require('./package')
-  require('./eslint')
   require('./license')
+  require('./readme')
+  require('./git')
+  require('./npm')
+  require('./eslint')
+  require('./nofiles')
 
   after(() => {
     rimraf.sync(path.join(__dirname, '.tmp'))
