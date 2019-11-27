@@ -2,19 +2,7 @@ const helpers = require('yeoman-test')
 const path = require('path')
 const rimraf = require('rimraf')
 const prompts = require('./config/prompts')
-const tests = [
-  './package',
-  './license',
-  './readme',
-  './git',
-  './npm',
-  './eslint',
-  './css',
-  './html',
-  './md',
-  './all',
-  './nofiles'
-]
+const tests = Object.keys(require('../generators/app/features'))
 
 describe('Web-dotfiles generator tests\n\n', function () {
   this.timeout(120000)
@@ -32,7 +20,7 @@ describe('Web-dotfiles generator tests\n\n', function () {
       })
   })
 
-  tests.forEach((test) => require(test))
+  tests.forEach((test) => require('./' + test))
 
   after(() => {
     rimraf.sync(path.join(__dirname, '.tmp'))

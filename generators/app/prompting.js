@@ -1,15 +1,4 @@
 module.exports = function (gen) {
-  const setts = [
-    'package',
-    'license',
-    'readme',
-    'git',
-    'npm',
-    'eslint',
-    'css',
-    'html',
-    'md'
-  ]
-
-  return setts.map((cur) => require('./settings/' + cur).prompt)
+  const features = require('./features')
+  return Object.keys(features).map((cur) => require('./settings/' + cur).prompt)
 }

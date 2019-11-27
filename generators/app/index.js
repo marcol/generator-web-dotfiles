@@ -23,17 +23,7 @@ class Uncomplicated extends Generator {
   async prompting () {
     // accept all if options is set
     if (this.options.all) {
-      this.answers = {
-        package: true,
-        eslint: true,
-        css: true,
-        html: true,
-        git: true,
-        license: true,
-        md: true,
-        npm: true,
-        readme: true
-      }
+      this.answers = require('./features')
       return
     }
 
