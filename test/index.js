@@ -10,6 +10,7 @@ const tests = [
   './npm',
   './eslint',
   './css',
+  './html',
   './md',
   './all',
   './nofiles'

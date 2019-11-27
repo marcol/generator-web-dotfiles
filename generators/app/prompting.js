@@ -7,6 +7,7 @@ module.exports = function (gen) {
     'npm',
     'eslint',
     'css',
+    'html',
     'md'
   ]
 

@@ -22,6 +22,7 @@ describe('Test no to all', function () {
     require('../generators/app/settings/git').files,
     require('../generators/app/settings/license').files,
     require('../generators/app/settings/md').files,
+    require('../generators/app/settings/html').files,
     require('../generators/app/settings/npm').files,
     require('../generators/app/settings/package').files,
     require('../generators/app/settings/readme').files

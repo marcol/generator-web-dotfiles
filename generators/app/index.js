@@ -25,8 +25,9 @@ class Uncomplicated extends Generator {
     if (this.options.all) {
       this.answers = {
         package: true,
-        css: true,
         eslint: true,
+        css: true,
+        html: true,
         git: true,
         license: true,
         md: true,
