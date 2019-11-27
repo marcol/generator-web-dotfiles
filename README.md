@@ -17,7 +17,10 @@ Now install the ultimate generator:
 npm install -g generator-web-dotfiles
 ```
 
-Finally, run `yo web-dotfiles` and follow the instructions.
+Finally, run and follow the instructions:
+```
+yo web-dotfiles
+```
 
 ### Options
 You can accept all config files and escape the question by using the option
@@ -34,4 +37,5 @@ yo web-dotfiles --all
 *   NPM configuration `.npmrc`
 *   JavaScript linting through [Eslint](https://eslint.org/) with [standard](https://standardjs.com/) configuration (`.eslintrc.json`, `.eslintignore`)
 *   CSS linting through [Stylelint](https://github.com/stylelint/stylelint) with [standard](https://github.com/stylelint/stylelint-config-standard) configuration (`.stylelintrc.json`, `.stylelintignore`)
+*   HTML linting through [HTMLHint](https://github.com/htmlhint/HTMLHint) configuration (`.htmlhintrc`)
 *   Markdown linting through [Remark](https://github.com/remarkjs/remark-lint) with [markdown style guide](https://github.com/remarkjs/remark-lint/tree/master/packages/remark-preset-lint-markdown-style-guide) configuration (`.remarkrc.js`)
