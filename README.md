@@ -5,6 +5,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?logo=javascript&style=flat-square)](https://standardjs.com)
 
 # generator-web-dotfiles
+You can use this generator on top of other generators to enforce code standards.
 
 ## Installing
 First install Yeoman:
