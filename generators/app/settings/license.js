@@ -2,7 +2,7 @@ module.exports = {
   prompt: {
     type: 'confirm',
     name: 'license',
-    message: 'Add License?',
+    message: 'Add ISC License?',
     default: true
   },
   files: [
