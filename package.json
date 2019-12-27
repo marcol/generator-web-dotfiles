@@ -1,6 +1,6 @@
 {
   "name": "generator-web-dotfiles",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Yeoman generator with dofiles for your web projects",
   "keywords": [
     "CSS",
