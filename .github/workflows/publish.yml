@@ -12,9 +12,8 @@ jobs:
       - uses: actions/setup-node@v2.1.1
         with:
           node-version: ${{ matrix.node-version }}
-          registry-url: 'https://registry.npmjs.org/'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        
+
       - name: Publish
         run: yarn publish
