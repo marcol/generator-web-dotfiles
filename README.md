@@ -10,10 +10,18 @@ You can use this generator on top of other generators to enforce code standards.
 ## Installing
 First install Yeoman:
 ```bash
+yarn add yo --global
+```
+or
+```bash
 npm install -g yo
 ```
 
 Now install the ultimate generator:
+```bash
+yarn add generator-web-dotfiles --global
+```
+or
 ```bash
 npm install -g generator-web-dotfiles
 ```
@@ -56,3 +64,6 @@ configuration (`.stylelintrc.json`, `.stylelintignore`)
 [Remark](https://github.com/remarkjs/remark-lint) with
 [markdown style guide](https://github.com/remarkjs/remark-lint/tree/master/packages/remark-preset-lint-markdown-style-guide)
 configuration (`.remarkrc.js`)
+
+-   Commit linting with [commitlint](https://commitlint.js.org/#/guides-local-setup)
+configuration (`commitlintrc.js`) and [husky](https://github.com/typicode/husky)

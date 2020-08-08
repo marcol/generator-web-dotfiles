@@ -25,6 +25,6 @@ module.exports = {
   ],
   scripts: {
     'lint:js': 'eslint .; exit 0',
-    lint: 'npm run lint:js'
+    lint: 'yarn lint:js'
   }
 }
