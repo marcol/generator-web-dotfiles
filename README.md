@@ -1,7 +1,8 @@
 [![NPM Downloads](https://img.shields.io/npm/dt/generator-web-dotfiles?logo=npm&style=flat-square)](https://www.npmjs.com/package/generator-web-dotfiles)
 [![NPM Version](https://img.shields.io/npm/v/generator-web-dotfiles?logo=npm&style=flat-square)](https://www.npmjs.com/package/generator-web-dotfiles)
-[![Release Date](https://img.shields.io/github/release-date/marcol/generator-web-dotfiles?logo=github&style=flat-square)](https://github.com/marcol/generator-web-dotfiles)
+![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/generator-web-dotfiles?logo=snyk&style=flat-square)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?logo=javascript&style=flat-square)](https://standardjs.com)
+[![CI Tests](https://img.shields.io/github/workflow/status/marcol/generator-web-dotfiles/CI?logo=github&style=flat-square)](https://github.com/marcol/generator-web-dotfiles)
 
 # generator-web-dotfiles
 You can use this generator on top of other generators to enforce code standards.
