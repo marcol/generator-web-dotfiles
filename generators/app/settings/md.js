@@ -6,7 +6,8 @@ module.exports = {
     default: true
   },
   files: [
-    '.remarkrc.js'
+    '.remarkrc.js',
+    '.remarkignore'
   ],
   dependencies: [
     'remark-cli',
