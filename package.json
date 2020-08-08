@@ -18,12 +18,14 @@
   "scripts": {
     "lint": "yarn lint:js && yarn lint:md",
     "lint:js": "eslint .; exit 0",
-    "lint:md": "remark --quiet .",
+    "lint:md": "remark . --quiet",
     "test": "mocha 'test/index.js'"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn test"
     }
   },
   "bugs": "https://github.com/marcol/generator-web-dotfiles/issues",
