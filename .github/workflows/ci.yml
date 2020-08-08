@@ -10,15 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: actions/setup-node@v1
         with:
-          node-version: 10.x
-          cmd: install # will run `yarn install` command
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          node-version: 10.x
-          cmd: lint # will run `yarn build` command
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          node-version: 10.x
-          cmd: test # will run `yarn test` command
+          node-version: '10.x'
+      - run: yarn install
+      - run: yarn lint
+      - run: yarn test
