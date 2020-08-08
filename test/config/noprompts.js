@@ -1,5 +1,6 @@
 module.exports = {
   package: false,
+  commitlint: false,
   css: false,
   eslint: false,
   git: false,

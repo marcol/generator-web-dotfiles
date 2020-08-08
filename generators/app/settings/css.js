@@ -15,6 +15,6 @@ module.exports = {
   ],
   scripts: {
     'lint:css': 'stylelint **/*.html **/*.css; exit 0',
-    lint: 'npm run lint:css'
+    lint: 'yarn lint:css'
   }
 }

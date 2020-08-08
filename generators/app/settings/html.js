@@ -13,6 +13,6 @@ module.exports = {
   ],
   scripts: {
     'lint:css': 'htmlhint **/*.html; exit 0',
-    lint: 'npm run lint:html'
+    lint: 'yarn lint:html'
   }
 }

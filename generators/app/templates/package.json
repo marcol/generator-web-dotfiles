@@ -13,5 +13,6 @@
   "author": "<% if (name) { %><%= name %><% } %><% if (email) { %> <<%= email %>><% } %>",
   "scripts": <%- scripts %>,
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {},
+  "husky": <%- commitlint %>
 }

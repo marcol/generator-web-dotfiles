@@ -3,7 +3,7 @@ const path = require('path')
 const config = require('../generators/app/settings/md')
 
 describe('Test Markdown linting', function () {
-  it('checks if remarkrc file is present', () => {
+  it('checks if remark files is present', () => {
     assert.file(config.files)
   })
 

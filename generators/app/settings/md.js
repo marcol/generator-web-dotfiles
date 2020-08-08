@@ -6,7 +6,8 @@ module.exports = {
     default: true
   },
   files: [
-    '.remarkrc.js'
+    '.remarkrc.js',
+    '.remarkignore'
   ],
   dependencies: [
     'remark-cli',
@@ -15,6 +16,6 @@ module.exports = {
   ],
   scripts: {
     'lint:md': 'remark .; exit 0',
-    lint: 'npm run lint:md'
+    lint: 'yarn lint:md'
   }
 }
