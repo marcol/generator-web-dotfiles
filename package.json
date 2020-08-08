@@ -16,9 +16,9 @@
     "yeoman-generator"
   ],
   "scripts": {
-    "lint": "yarn lint:js && yarn lint:md && yarn lint:css",
+    "lint": "yarn lint:js && yarn lint:md",
     "lint:js": "eslint .; exit 0",
-    "lint:md": "remark .; exit 0 ",
+    "lint:md": "remark --quiet .",
     "test": "mocha 'test/index.js'"
   },
   "husky": {
