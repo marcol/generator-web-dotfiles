@@ -16,4 +16,4 @@ jobs:
           scope: '@marcol'
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-      - run: yarn publish
+      - run: npm publish
