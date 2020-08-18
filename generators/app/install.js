@@ -11,5 +11,5 @@ module.exports = function (gen) {
 
   gen.log(chalk.bold.black.bgWhite('\n Instal '), chalk.bold('Installing dependencies...'))
 
-  gen.yarnInstall(files, { 'save-dev': true, skipMessage: true })
+  gen.yarnInstall(files, { dev: true, skipMessage: true })
 }
