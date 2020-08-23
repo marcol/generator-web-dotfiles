@@ -22,14 +22,12 @@ describe('Test no to all', function () {
 
   const files = Object.keys(require('../generators/app/features'))
     .map((cur) => {
-      return require('../generators/app/settings/' + cur).files
-    })
-    .flat().map((cur) => {
-      return testPath + cur
+      const settings = require('../generators/app/settings/' + cur)
+      return settings.files.map((cur) => testPath + cur)
     })
 
   it('checks if no files are present', () => {
-    assert.noFile(files)
+    assert.noFile(files.flat())
   })
 })
 
