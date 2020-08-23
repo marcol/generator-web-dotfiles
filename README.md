@@ -65,3 +65,6 @@ configuration (`.remarkrc.js`)
 
 -   Commit linting with [commitlint](https://commitlint.js.org/#/guides-local-setup)
 configuration (`commitlintrc.js`) and [husky](https://github.com/typicode/husky)
+
+-   Git commits with [husky](https://github.com/typicode/husky). Runs lint on
+commit, runs tests on push
