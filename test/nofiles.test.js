@@ -4,10 +4,6 @@ const path = require('path')
 const rimraf = require('rimraf')
 const prompts = require('./config/noprompts')
 const testPath = path.join(__dirname, '.tmp-nofiles/')
-const features = Object.keys(require('../generators/app/features'))
-const files = features.map((cur) => {
-  return require('../generators/app/settings/' + cur).files
-})
 
 describe('Test no to all', function () {
   beforeAll(async (done) => {
@@ -24,11 +20,16 @@ describe('Test no to all', function () {
     rimraf.sync(testPath)
   })
 
-  const checkList = files.flat().map((cur) => {
-    return testPath + cur
-  })
+  const files = Object.keys(require('../generators/app/features'))
+    .map((cur) => {
+      return require('../generators/app/settings/' + cur).files
+    })
+    .flat().map((cur) => {
+      return testPath + cur
+    })
+
   it('checks if no files are present', () => {
-    assert.noFile(checkList)
+    assert.noFile(files)
   })
 })
 
