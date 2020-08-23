@@ -19,6 +19,6 @@ module.exports = function (gen) {
 
   // copying files
   files.forEach((cur) => {
-    gen.fs.copyTpl(gen.templatePath(cur), gen.destinationPath(cur), data)
+    gen.fs.copyTpl(gen.templatePath('_' + cur), gen.destinationPath(cur), data)
   })
 }
