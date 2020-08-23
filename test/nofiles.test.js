@@ -1,0 +1,35 @@
+const assert = require('yeoman-assert')
+const helpers = require('yeoman-test')
+const path = require('path')
+const rimraf = require('rimraf')
+const prompts = require('./config/noprompts')
+const testPath = path.join(__dirname, '.tmp-nofiles/')
+const features = Object.keys(require('../generators/app/features'))
+const files = features.map((cur) => {
+  return require('../generators/app/settings/' + cur).files
+})
+
+describe('Test no to all', function () {
+  beforeAll(async (done) => {
+    await helpers.run(path.join(__dirname, '../generators/app'))
+      .inDir(testPath)
+      .withPrompts(prompts)
+      .withOptions({
+        'skip-install': true
+      })
+    done()
+  }, 120000)
+
+  afterAll(() => {
+    rimraf.sync(testPath)
+  })
+
+  const checkList = files.flat().map((cur) => {
+    return testPath + cur
+  })
+  it('checks if no files are present', () => {
+    assert.noFile(checkList)
+  })
+})
+
+module.exports = null
