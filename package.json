@@ -1,20 +1,25 @@
 {
   "name": "generator-web-dotfiles",
   "version": "2.0.0",
-  "description": "Yeoman generator with dofiles for your web projects",
+  "description": "Add dofiles for your JavaScript/Web projects. It will setup linting for js, css, markdown, html. Add validation to commits and githooks for testing and linting.",
   "keywords": [
     "CSS",
     "HTML",
     "JavaScript",
     "js",
     "git",
+    "ci",
+    "quick",
     "simple",
     "web",
     "dotfiles",
     ".eslint",
     ".gitignore",
     ".stylelint",
-    "yeoman-generator"
+    "yeoman-generator",
+    "yo",
+    "generator",
+    "yeoman"
   ],
   "scripts": {
     "lint": "yarn lint:js && yarn lint:md",
