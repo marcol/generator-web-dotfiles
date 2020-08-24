@@ -1,11 +1,12 @@
 [![NPM Downloads](https://img.shields.io/npm/dt/generator-web-dotfiles?logo=npm&style=flat-square)](https://www.npmjs.com/package/generator-web-dotfiles)
 [![NPM Version](https://img.shields.io/npm/v/generator-web-dotfiles?logo=npm&style=flat-square)](https://www.npmjs.com/package/generator-web-dotfiles)
-![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/generator-web-dotfiles?logo=snyk&style=flat-square)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?logo=javascript&style=flat-square)](https://standardjs.com)
 [![CI Tests](https://img.shields.io/github/workflow/status/marcol/generator-web-dotfiles/CI?logo=github&style=flat-square)](https://github.com/marcol/generator-web-dotfiles)
 
 # generator-web-dotfiles
-You can use this generator on top of other generators to enforce code standards.
+You can use this generator on top of other generators to enforce code standards
+for js, css, html and markdown.
+Setup githooks to check linting or run tests when you commit or push and
+improve the quality of your commit messages with commitlint.
 
 ## Installing
 First install Yeoman:
@@ -67,3 +68,6 @@ configuration (`.remarkrc.js`)
 
 -   Commit linting with [commitlint](https://commitlint.js.org/#/guides-local-setup)
 configuration (`commitlintrc.js`) and [husky](https://github.com/typicode/husky)
+
+-   Git commits with [husky](https://github.com/typicode/husky). Runs lint on
+commit, runs tests on push

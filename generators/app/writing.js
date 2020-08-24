@@ -3,6 +3,7 @@ const str = require('string-sanitizer')
 
 module.exports = function (gen) {
   const files = require('./files')(gen)
+
   const data = {
     project: str.sanitize.addUnderscore(gen.appname),
     name: gen.user.git.name() || '',
@@ -11,14 +12,24 @@ module.exports = function (gen) {
     license: (gen.answers.license) ? 'ISC' : ''
   }
 
+  const hooks = {}
+
+  if (gen.answers.githooks) {
+    Object.assign(hooks, require('./settings/githooks').data.husky.hooks)
+  }
+
+  if (gen.answers.commitlint) {
+    Object.assign(hooks, require('./settings/commitlint').data.husky.hooks)
+  }
+
+  data.husky = JSON.stringify({ husky: { hooks: hooks } })
+
   // set package json configuration
   data.scripts = JSON.stringify(require('./scripts')(gen))
-  data.commitlint = (gen.answers.commitlint) ? JSON.stringify(require('./settings/commitlint').data) : ''
-
   gen.log(chalk.bold.black.bgWhite('\n Writing '), chalk.bold('Creating the necessary files...'))
 
   // copying files
   files.forEach((cur) => {
-    gen.fs.copyTpl(gen.templatePath(cur), gen.destinationPath(cur), data)
+    gen.fs.copyTpl(gen.templatePath('_' + cur), gen.destinationPath(cur), data)
   })
 }

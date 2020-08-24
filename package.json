@@ -1,25 +1,32 @@
 {
   "name": "generator-web-dotfiles",
-  "version": "1.1.10",
-  "description": "Yeoman generator with dofiles for your web projects",
+  "version": "2.0.0",
+  "description": "Add dofiles for your JavaScript/Web projects. It will setup linting for js, css, markdown, html. Add validation to commits and githooks for testing and linting.",
   "keywords": [
     "CSS",
     "HTML",
     "JavaScript",
-    "Git",
+    "js",
+    "git",
+    "ci",
+    "quick",
     "simple",
     "web",
     "dotfiles",
     ".eslint",
     ".gitignore",
     ".stylelint",
-    "yeoman-generator"
+    "yeoman-generator",
+    "yo",
+    "generator",
+    "yeoman"
   ],
   "scripts": {
     "lint": "yarn lint:js && yarn lint:md",
     "lint:js": "eslint .",
     "lint:md": "remark . --quiet",
-    "test": "mocha 'test/index.js'"
+    "test": "yarn test:unit",
+    "test:unit": "jest"
   },
   "husky": {
     "hooks": {
@@ -38,28 +45,28 @@
     "generators"
   ],
   "dependencies": {
+    "chalk": "^4.1.0",
     "yeoman-generator": "^4.11.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.1.1",
-    "@commitlint/config-conventional": "^9.1.1",
-    "chalk": "^4.1.0",
-    "eslint": "^7.4.0",
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "eslint": "^7.7.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-filenames": "^1.3.2",
-    "eslint-plugin-html": "^6.0.2",
+    "eslint-plugin-html": "^6.0.3",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^1.0.2",
-    "eslint-plugin-mocha": "^8.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "husky": "^4.2.5",
-    "mocha": "^8.0.1",
     "remark-cli": "^8.0.0",
     "remark-lint": "^7.0.1",
     "remark-preset-lint-markdown-style-guide": "^3.0.1",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
     "rimraf": "^3.0.2",
     "string-sanitizer": "^1.1.1",
     "yeoman-assert": "^3.1.1",
