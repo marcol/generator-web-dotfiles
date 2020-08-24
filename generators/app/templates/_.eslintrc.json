@@ -2,8 +2,7 @@
   "env": {
     "browser": true,
     "node": true,
-    "es6": true,
-    "mocha": true
+    "es6": true
   },
   "extends": "standard",
   "globals": {
@@ -18,8 +17,7 @@
     "html",
     "markdown",
     "json-format",
-    "filenames",
-    "mocha"
+    "filenames"
   ],
   "rules": {
     "indent": ["warn", 2],
