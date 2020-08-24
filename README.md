@@ -3,7 +3,10 @@
 [![CI Tests](https://img.shields.io/github/workflow/status/marcol/generator-web-dotfiles/CI?logo=github&style=flat-square)](https://github.com/marcol/generator-web-dotfiles)
 
 # generator-web-dotfiles
-You can use this generator on top of other generators to enforce code standards.
+You can use this generator on top of other generators to enforce code standards
+for js, css, html and markdown.
+Setup githooks to check linting or run tests when you commit or push and
+improve the quality of your commit messages with commitlint.
 
 ## Installing
 First install Yeoman:
