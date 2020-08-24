@@ -22,7 +22,7 @@ module.exports = function (gen) {
     Object.assign(hooks, require('./settings/commitlint').data.husky.hooks)
   }
 
-  data.husky = JSON.stringify({ husky: { hooks: hooks } })
+  data.husky = JSON.stringify({ hooks: hooks })
 
   // set package json configuration
   data.scripts = JSON.stringify(require('./scripts')(gen))
