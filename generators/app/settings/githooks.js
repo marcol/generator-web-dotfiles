@@ -6,7 +6,9 @@ module.exports = {
     default: true
   },
   files: [],
-  dependencies: [],
+  dependencies: [
+    'husky'
+  ],
   data: {
     husky: {
       hooks: {
