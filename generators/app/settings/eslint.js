@@ -23,7 +23,7 @@ module.exports = {
     'eslint-config-standard'
   ],
   scripts: {
-    'lint:js': 'eslint .',
+    'lint:js': 'eslint',
     lint: 'yarn lint:js'
   }
 }
