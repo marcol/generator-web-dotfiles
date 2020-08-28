@@ -12,7 +12,7 @@ module.exports = {
     'htmlhint'
   ],
   scripts: {
-    'lint:css': 'htmlhint **/*.html; exit 0',
+    'lint:html': 'htmlhint **/*.html',
     lint: 'yarn lint:html'
   }
 }

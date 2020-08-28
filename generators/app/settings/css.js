@@ -14,7 +14,7 @@ module.exports = {
     'stylelint-config-standard'
   ],
   scripts: {
-    'lint:css': 'stylelint **/*.html **/*.css; exit 0',
+    'lint:css': 'stylelint **/*.html **/*.css',
     lint: 'yarn lint:css'
   }
 }

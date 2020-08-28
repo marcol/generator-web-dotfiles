@@ -1,4 +1,4 @@
-const chalk = require('chalk')
+const { info } = require('sugar-chalk')
 
 module.exports = function (gen) {
   let files = []
@@ -9,7 +9,6 @@ module.exports = function (gen) {
     }
   })
 
-  gen.log(chalk.bold.black.bgWhite('\n Instal '), chalk.bold('Installing dependencies...'))
-
+  info('Installing dependencies...')
   gen.yarnInstall(files, { dev: true, skipMessage: true })
 }

@@ -1,4 +1,4 @@
-const chalk = require('chalk')
+const { info } = require('sugar-chalk')
 
 /**
  * initialization methods: checking current project state, getting
@@ -6,5 +6,5 @@ const chalk = require('chalk')
  * @return void
  */
 module.exports = function (gen) {
-  gen.log(chalk.black.bold.bgBlue('\n Starting '), chalk.bold('Welcome to web-dotfiles generator!'))
+  info('Welcome to web-dotfiles generator!')
 }

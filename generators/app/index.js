@@ -1,5 +1,5 @@
 const Generator = require('yeoman-generator')
-const chalk = require('chalk')
+const { info } = require('sugar-chalk')
 
 class Uncomplicated extends Generator {
   constructor (args, opts) {
@@ -28,8 +28,7 @@ class Uncomplicated extends Generator {
     }
 
     const prompts = require('./prompting')(this)
-    this.log(chalk.bold.black.bgWhite('\n Setup '),
-      chalk.bold('We need some input from you to setup your project'))
+    info('We need some input from you to setup your project')
     this.answers = await this.prompt(prompts)
   }
 
