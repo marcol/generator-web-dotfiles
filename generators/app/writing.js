@@ -1,4 +1,4 @@
-const chalk = require('chalk')
+const { info } = require('sugar-chalk')
 const str = require('string-sanitizer')
 
 module.exports = function (gen) {
@@ -26,7 +26,7 @@ module.exports = function (gen) {
 
   // set package json configuration
   data.scripts = JSON.stringify(require('./scripts')(gen))
-  gen.log(chalk.bold.black.bgWhite('\n Writing '), chalk.bold('Creating the necessary files...'))
+  info('Creating the necessary files...')
 
   // copying files
   files.forEach((cur) => {
