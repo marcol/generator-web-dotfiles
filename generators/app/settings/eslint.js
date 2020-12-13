@@ -19,7 +19,6 @@ module.exports = {
     'eslint-plugin-import',
     'eslint-plugin-node',
     'eslint-plugin-promise',
-    'eslint-plugin-standard',
     'eslint-config-standard'
   ],
   scripts: {
