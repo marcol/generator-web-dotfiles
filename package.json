@@ -1,6 +1,6 @@
 {
   "name": "generator-web-dotfiles",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Add dofiles for your JavaScript/Web projects. It will setup linting for js, css, markdown, html. Add validation to commits and githooks for testing and linting.",
   "keywords": [
     "CSS",
@@ -24,7 +24,7 @@
   "scripts": {
     "lint": "yarn lint:js && yarn lint:md",
     "lint:js": "eslint",
-    "lint:md": "remark --quiet",
+    "lint:md": "remark . --quiet",
     "test": "yarn test:unit",
     "test:unit": "jest"
   },
@@ -45,28 +45,27 @@
     "generators"
   ],
   "dependencies": {
-    "sugar-chalk": "^1.5.3",
-    "yeoman-generator": "^4.11.0"
+    "sugar-chalk": "^1.6.1",
+    "yeoman-generator": "^4.12.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.2",
-    "eslint": "^7.7.0",
-    "eslint-config-standard": "^14.1.1",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "eslint": "^7.15.0",
+    "eslint-config-standard": "^16.0.2",
     "eslint-plugin-filenames": "^1.3.2",
-    "eslint-plugin-html": "^6.0.3",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "husky": "^4.2.5",
-    "jest": "^26.4.2",
-    "remark-cli": "^8.0.0",
-    "remark-lint": "^7.0.1",
-    "remark-preset-lint-markdown-style-guide": "^3.0.1",
+    "husky": "^4.3.5",
+    "jest": "^26.6.3",
+    "remark-cli": "^9.0.0",
+    "remark-lint": "^8.0.0",
+    "remark-preset-lint-markdown-style-guide": "^4.0.0",
     "rimraf": "^3.0.2",
     "string-sanitizer": "^1.1.1",
     "yeoman-assert": "^3.1.1",
