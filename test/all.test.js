@@ -13,7 +13,7 @@ describe('Test all option', function () {
     await helpers.run(path.join(__dirname, '../generators/app'))
       .inDir(testPath)
       .withOptions({
-        'skip-install': true
+        'skip-install': false
       })
       .withArguments([
         'all'

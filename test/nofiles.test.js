@@ -20,14 +20,18 @@ describe('Test no to all', function () {
     rimraf.sync(testPath)
   })
 
-  const files = Object.keys(require('../generators/app/features'))
-    .map((cur) => {
-      const settings = require('../generators/app/settings/' + cur)
-      return settings.files.map((cur) => testPath + cur)
-    })
+  function getFiles () {
+    const files = Object.keys(require('../generators/app/features'))
+      .map((cur) => {
+        const settings = require('../generators/app/settings/' + cur)
+        return settings.files.map((cur) => testPath + cur)
+      })
+
+    return files.flat()
+  }
 
   it('checks if no files are present', () => {
-    assert.noFile(files.flat())
+    assert.noFile(getFiles())
   })
 })
 

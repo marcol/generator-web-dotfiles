@@ -4,7 +4,6 @@ module.exports = {
   css: false,
   eslint: false,
   git: false,
-  githooks: false,
   html: false,
   license: false,
   md: false,

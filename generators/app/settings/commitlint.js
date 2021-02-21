@@ -13,11 +13,26 @@ module.exports = {
     '@commitlint/config-conventional',
     'husky'
   ],
-  data: {
-    husky: {
-      hooks: {
-        'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS'
-      }
+  commands: [
+    {
+      cmd: 'git',
+      args: ['init']
+    },
+    {
+      cmd: 'yarn',
+      args: ['husky', 'install']
+    },
+    {
+      cmd: 'yarn',
+      args: ['husky', 'add', '.husky/commit-msg', 'yarn commitlint --edit $1']
+    },
+    {
+      cmd: 'yarn',
+      args: ['husky', 'add', '.husky/pre-commit', 'yarn lint']
+    },
+    {
+      cmd: 'yarn',
+      args: ['husky', 'add', '.husky/pre-push', 'yarn test']
     }
-  }
+  ]
 }
