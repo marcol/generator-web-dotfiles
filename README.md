@@ -82,5 +82,8 @@ yo web-dotfiles --all
     configuration (`commitlintrc.js`) and [husky](https://github.com/typicode/husky)
 
 -   Git commits with [husky](https://github.com/typicode/husky). Runs lint on
-    commit, runs tests on push. If you haven't initialized a git repository, the githooks won't be installed.
-    First, initialize your git repository `git init`. You can always run the generator again to add the hooks or install husky events `yarn husky install` and add the files to run on events e.g.: `yarn husky add .husky/pre-commit "yarn lint"`.
+commit, runs tests on push. If you haven't initialized a git repository, the
+githooks won't be installed.
+First, initialize your git repository `git init`. You can always run the
+generator again to add the hooks or install husky events `yarn husky install`
+and add the files to run on events e.g.: `yarn husky add .husky/pre-commit "yarn lint"`.
