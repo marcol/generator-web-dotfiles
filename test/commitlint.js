@@ -9,9 +9,9 @@ describe('Test commitlint', () => {
 
   it('checks for hooks', () => {
     assert.file([
-      path.join(__dirname, '.husky/commit-msg'),
-      path.join(__dirname, '.husky/pre-commit'),
-      path.join(__dirname, '.husky/pre-push')
+      path.join(__dirname, '.tmp/.husky/commit-msg'),
+      path.join(__dirname, '.tmp/.husky/pre-commit'),
+      path.join(__dirname, '.tmp/.husky/pre-push')
     ])
   })
 
