@@ -17,10 +17,10 @@ jobs:
         node-version: [12.x, 14.x]
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2-beta
+    - uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
         check-latest: true
     - run: yarn install
     - run: yarn lint
-    - run: yarn test
+    - run: yarn jest test/index.test.js
