@@ -12,18 +12,6 @@ module.exports = function (gen) {
     license: (gen.answers.license) ? 'ISC' : ''
   }
 
-  const hooks = {}
-
-  if (gen.answers.githooks) {
-    Object.assign(hooks, require('./settings/githooks').data.husky.hooks)
-  }
-
-  if (gen.answers.commitlint) {
-    Object.assign(hooks, require('./settings/commitlint').data.husky.hooks)
-  }
-
-  data.husky = JSON.stringify({ hooks: hooks })
-
   // set package json configuration
   data.scripts = JSON.stringify(require('./scripts')(gen))
   info('Creating the necessary files...')

@@ -10,5 +10,9 @@ module.exports = function (gen) {
   })
 
   info('Installing dependencies...')
-  gen.yarnInstall(files, { dev: true, skipMessage: true })
+  gen.yarnInstall(files, {
+    dev: true,
+    skipMessage: true,
+    silent: true
+  })
 }

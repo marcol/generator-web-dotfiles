@@ -1,5 +1,5 @@
 const Generator = require('yeoman-generator')
-const { info } = require('sugar-chalk')
+const { silent, info } = require('sugar-chalk')
 
 class Uncomplicated extends Generator {
   constructor (args, opts) {
@@ -13,6 +13,7 @@ class Uncomplicated extends Generator {
    * @return void
    */
   initializing () {
+    silent()
     require('./initializing')(this)
   }
 
