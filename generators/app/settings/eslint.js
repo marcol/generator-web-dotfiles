@@ -11,7 +11,7 @@ module.exports = {
   ],
   dependencies: [
     'eslint',
-    'babel-eslint',
+    '@babel/eslint-parser',
     'eslint-plugin-html',
     'eslint-plugin-markdown',
     'eslint-plugin-filenames',
