@@ -1,6 +1,6 @@
 {
   "name": "generator-web-dotfiles",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "private": false,
   "description": "Add dofiles for your JavaScript/Web projects. It will setup linting for js, css, markdown, html. Add validation to commits and githooks for testing and linting.",
   "keywords": [
@@ -46,8 +46,8 @@
     "yeoman-generator": "^4.13.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^12.1.1",
+    "@commitlint/cli": "^12.1.3",
+    "@commitlint/config-conventional": "^12.1.3",
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-filenames": "^1.3.2",
@@ -67,10 +67,9 @@
     "rimraf": "^3.0.2",
     "string-sanitizer": "^1.1.1",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^6.0.0"
+    "yeoman-test": "^5.1.0"
   },
   "resolutions": {
-    "**/lodash": "^4.17.21",
     "**/trim": "^0.0.3",
     "**/axios": "^0.21.1"
   }
