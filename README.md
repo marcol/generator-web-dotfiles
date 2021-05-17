@@ -72,6 +72,7 @@ yo web-dotfiles --all
 
 -   HTML linting through
     [HTMLHint](https://github.com/htmlhint/HTMLHint) configuration (`.htmlhintrc`)
+    
 -   Markdown linting through
     [Remark](https://github.com/remarkjs/remark-lint) with
     [markdown style guide](https://github.com/remarkjs/remark-lint/tree/master/packages/remark-preset-lint-markdown-style-guide)
