@@ -72,7 +72,6 @@ yo web-dotfiles --all
 
 -   HTML linting through
     [HTMLHint](https://github.com/htmlhint/HTMLHint) configuration (`.htmlhintrc`)
-
 -   Markdown linting through
     [Remark](https://github.com/remarkjs/remark-lint) with
     [markdown style guide](https://github.com/remarkjs/remark-lint/tree/master/packages/remark-preset-lint-markdown-style-guide)
@@ -87,3 +86,6 @@ githooks won't be installed.
 First, initialize your git repository `git init`. You can always run the
 generator again to add the hooks or install husky events `yarn husky install`
 and add the files to run on events e.g.: `yarn husky add .husky/pre-commit "yarn lint"`.
+
+## Compatibility
+Version 3.x requires yo 4.x

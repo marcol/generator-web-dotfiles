@@ -8,11 +8,13 @@ module.exports = {
   files: [
     '.commitlintrc.json'
   ],
-  dependencies: [
-    '@commitlint/cli',
-    '@commitlint/config-conventional',
-    'husky'
-  ],
+  package: {
+    devDependencies: {
+      '@commitlint/cli': '12.1.4',
+      '@commitlint/config-conventional': '12.1.4',
+      husky: '6.0.0'
+    }
+  },
   commands: [
     {
       cmd: 'git',

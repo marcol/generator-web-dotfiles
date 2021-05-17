@@ -1,3 +1,6 @@
+/**
+ * Default options for the generator
+ */
 module.exports = {
   package: true,
   eslint: true,

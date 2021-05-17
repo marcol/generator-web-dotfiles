@@ -13,7 +13,7 @@ describe('Test LICENSE', function () {
   })
 
   it('checks LICENSE in package json', () => {
-    assert.jsonFileContent(path.join(__dirname, '.tmp/package.json'), config.data)
+    assert.fileContent(path.join(__dirname, '.tmp/package.json'), config.package.license)
   })
 })
 

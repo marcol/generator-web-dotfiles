@@ -11,7 +11,8 @@ describe('Test no to all', function () {
       .inDir(testPath)
       .withPrompts(prompts)
       .withOptions({
-        'skip-install': true
+        'skip-install': true,
+        silent: true
       })
     done()
   }, 120000)

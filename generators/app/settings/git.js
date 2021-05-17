@@ -8,5 +8,5 @@ module.exports = {
   files: [
     '.gitignore'
   ],
-  dependencies: []
+  package: {}
 }

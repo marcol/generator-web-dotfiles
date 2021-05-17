@@ -8,5 +8,5 @@ module.exports = {
   files: [
     '.npmrc'
   ],
-  dependencies: []
+  package: {}
 }

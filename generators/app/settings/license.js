@@ -8,8 +8,7 @@ module.exports = {
   files: [
     'LICENSE'
   ],
-  dependencies: [],
-  data: {
+  package: {
     license: 'ISC'
   }
 }
