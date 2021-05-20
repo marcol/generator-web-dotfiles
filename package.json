@@ -27,7 +27,7 @@
     "lint": "yarn lint:js && yarn lint:md",
     "lint:js": "eslint",
     "lint:md": "remark . --quiet",
-    "test": "yarn test:uni",
+    "test": "yarn test:unit",
     "test:unit": "jest",
     "_postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
