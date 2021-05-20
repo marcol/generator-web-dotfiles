@@ -23,12 +23,13 @@
     "yeoman"
   ],
   "scripts": {
+    "release": "node ./scripts/release.js",
     "lint": "yarn lint:js && yarn lint:md",
     "lint:js": "eslint",
     "lint:md": "remark . --quiet",
-    "test": "yarn test:unit",
+    "test": "yarn test:uni",
     "test:unit": "jest",
-    "postinstall": "husky install",
+    "_postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
   },
@@ -61,6 +62,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
+    "ora": "^5.4.0",
     "pinst": "^2.1.6",
     "remark-cli": "^9.0.0",
     "remark-lint": "^8.0.0",
@@ -68,8 +70,8 @@
     "rimraf": "^3.0.2",
     "string-sanitizer": "^1.1.1",
     "yeoman-assert": "^3.1.1",
-    "yeoman-environment": "^3.3.0",
-    "yeoman-test": "^6.0.0"
+    "yeoman-environment": "^3.4.0",
+    "yeoman-test": "^6.1.0"
   },
   "resolutions": {
     "**/trim": "^0.0.3"
