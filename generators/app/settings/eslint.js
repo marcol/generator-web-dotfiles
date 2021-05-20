@@ -9,20 +9,20 @@ module.exports = {
     '.eslintignore',
     '.eslintrc.json'
   ],
-  dependencies: [
-    'eslint',
-    '@babel/eslint-parser',
-    'eslint-plugin-html',
-    'eslint-plugin-markdown',
-    'eslint-plugin-filenames',
-    'eslint-plugin-json-format',
-    'eslint-plugin-import',
-    'eslint-plugin-node',
-    'eslint-plugin-promise',
-    'eslint-config-standard'
-  ],
-  scripts: {
-    'lint:js': 'eslint',
-    lint: 'yarn lint:js'
+  package: {
+    devDependencies: {
+      eslint: '^7.26.0',
+      'eslint-plugin-html': '^6.1.2',
+      'eslint-plugin-markdown': '^2.1.0',
+      'eslint-plugin-filenames': '^1.3.2',
+      'eslint-plugin-json-format': '^2.0.1',
+      'eslint-plugin-import': '^2.23.2',
+      'eslint-plugin-node': '^11.1.0',
+      'eslint-plugin-promise': '^4.2.1',
+      'eslint-config-standard': '^16.0.2'
+    },
+    scripts: {
+      'lint:js': 'eslint'
+    }
   }
 }

@@ -9,12 +9,14 @@ module.exports = {
     '.stylelintignore',
     '.stylelintrc.json'
   ],
-  dependencies: [
-    'stylelint',
-    'stylelint-config-standard'
-  ],
-  scripts: {
-    'lint:css': 'stylelint **/*.html **/*.css',
-    lint: 'yarn lint:css'
+  package: {
+    devDependencies: {
+      stylelint: '^13.13.1',
+      'stylelint-config-standard': '^22.0.0'
+    },
+    scripts: {
+      'lint:css': 'stylelint **/*.html **/*.css',
+      lint: 'yarn lint:css'
+    }
   }
 }

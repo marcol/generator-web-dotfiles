@@ -5,8 +5,16 @@ module.exports = {
     message: 'Add package.json?',
     default: true
   },
-  files: [
-    'package.json'
-  ],
-  dependencies: []
+  files: [],
+  package: {
+    version: '0.1.0',
+    keywords: '',
+    homepage: '',
+    bugs: '',
+    license: '',
+    repository: {
+      type: '',
+      url: ''
+    }
+  }
 }

@@ -12,7 +12,7 @@ describe('Test Markdown linting', function () {
   })
 
   it('checks package.json Markdown lint dependencies', () => {
-    config.dependencies.forEach((cur) => {
+    Object.keys(config.package.devDependencies).forEach((cur) => {
       assert.fileContent(path.join(__dirname, '.tmp/package.json'), new RegExp(cur))
     })
   })

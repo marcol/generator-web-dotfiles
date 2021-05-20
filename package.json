@@ -1,6 +1,6 @@
 {
   "name": "generator-web-dotfiles",
-  "version": "2.2.3",
+  "version": "3.0.0",
   "private": false,
   "description": "Add dofiles for your JavaScript/Web projects. It will setup linting for js, css, markdown, html. Add validation to commits and githooks for testing and linting.",
   "keywords": [
@@ -23,12 +23,13 @@
     "yeoman"
   ],
   "scripts": {
+    "release": "node ./scripts/release.js",
     "lint": "yarn lint:js && yarn lint:md",
     "lint:js": "eslint",
     "lint:md": "remark . --quiet",
     "test": "yarn test:unit",
     "test:unit": "jest",
-    "postinstall": "husky install",
+    "_postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
   },
@@ -42,24 +43,26 @@
     "generators"
   ],
   "dependencies": {
+    "deep-extend": "^0.6.0",
     "sugar-chalk": "^1.6.5",
-    "yeoman-generator": "^4.13.0"
+    "yeoman-generator": "^5.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.3",
-    "@commitlint/config-conventional": "^12.1.3",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-filenames": "^1.3.2",
     "eslint-plugin-html": "^6.1.2",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^2.1.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^4.2.1",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
+    "ora": "^5.4.0",
     "pinst": "^2.1.6",
     "remark-cli": "^9.0.0",
     "remark-lint": "^8.0.0",
@@ -67,10 +70,10 @@
     "rimraf": "^3.0.2",
     "string-sanitizer": "^1.1.1",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^5.1.0"
+    "yeoman-environment": "^3.4.0",
+    "yeoman-test": "^6.1.0"
   },
   "resolutions": {
-    "**/trim": "^0.0.3",
-    "**/axios": "^0.21.1"
+    "**/trim": "^0.0.3"
   }
 }

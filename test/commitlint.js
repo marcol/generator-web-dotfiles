@@ -16,7 +16,7 @@ describe('Test commitlint', () => {
   })
 
   it('checks package.json commitlint dependencies', () => {
-    config.dependencies.forEach((cur) => {
+    Object.keys(config.package.devDependencies).forEach((cur) => {
       assert.fileContent(path.join(__dirname, '.tmp/package.json'), new RegExp(cur))
     })
   })

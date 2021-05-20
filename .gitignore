@@ -39,3 +39,5 @@ tmp/
 .yarn-integrity
 Desktop.ini
 Thumbs.db
+
+tasks.todo

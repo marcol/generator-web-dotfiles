@@ -8,11 +8,12 @@ module.exports = {
   files: [
     '.htmlhintrc'
   ],
-  dependencies: [
-    'htmlhint'
-  ],
-  scripts: {
-    'lint:html': 'htmlhint **/*.html',
-    lint: 'yarn lint:html'
+  package: {
+    devDependencies: {
+      htmlhint: '0.14.2'
+    },
+    scripts: {
+      'lint:html': 'htmlhint **/*.html'
+    }
   }
 }

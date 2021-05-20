@@ -8,5 +8,5 @@ module.exports = {
   files: [
     'README.md'
   ],
-  dependencies: []
+  package: {}
 }
