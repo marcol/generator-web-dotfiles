@@ -9,7 +9,7 @@ const files = features.map((cur) => {
 })
 
 describe('Test all option', function () {
-  beforeAll(async (done) => {
+  beforeAll(async () => {
     await helpers.run(path.join(__dirname, '../generators/app'))
       .inDir(testPath)
       .withOptions({
@@ -19,7 +19,6 @@ describe('Test all option', function () {
       .withArguments([
         'all'
       ])
-    done()
   }, 1200000)
 
   afterAll(() => {

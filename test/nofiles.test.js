@@ -6,7 +6,7 @@ const prompts = require('./config/noprompts')
 const testPath = path.join(__dirname, '.tmp-nofiles/')
 
 describe('Test no to all', function () {
-  beforeAll(async (done) => {
+  beforeAll(async () => {
     await helpers.run(path.join(__dirname, '../generators/app'))
       .inDir(testPath)
       .withPrompts(prompts)
@@ -14,7 +14,6 @@ describe('Test no to all', function () {
         'skip-install': true,
         silent: true
       })
-    done()
   }, 120000)
 
   afterAll(() => {

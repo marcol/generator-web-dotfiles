@@ -4,8 +4,8 @@ const rimraf = require('rimraf')
 const prompts = require('./config/prompts')
 const tests = Object.keys(require('../generators/app/features'))
 
-describe('Web-dotfiles generator tests', function () {
-  beforeAll(async (done) => {
+describe('Generator tests', function () {
+  beforeAll(async () => {
     process.env.TEST = true
 
     await helpers.run(path.join(__dirname, '../generators/app'))
@@ -15,8 +15,6 @@ describe('Web-dotfiles generator tests', function () {
         'skip-install': false,
         silent: true
       })
-
-    done()
   }, 120000)
 
   afterAll(() => {
