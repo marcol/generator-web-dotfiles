@@ -1,6 +1,6 @@
 {
   "name": "generator-web-dotfiles",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "private": false,
   "description": "Add dofiles for your JavaScript/Web projects. It will setup linting for js, css, markdown, html. Add validation to commits and githooks for testing and linting.",
   "keywords": [
@@ -23,7 +23,6 @@
     "yeoman"
   ],
   "scripts": {
-    "release": "node ./scripts/release.js",
     "lint": "yarn lint:js && yarn lint:md",
     "lint:js": "eslint",
     "lint:md": "remark . --quiet",
@@ -62,6 +61,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "husky": "^7.0.2",
     "jest": "^26.6.3",
+    "listr": "^0.14.3",
     "ora": "^6.0.1",
     "pinst": "^2.1.6",
     "remark-cli": "^10.0.0",
