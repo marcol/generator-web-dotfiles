@@ -43,7 +43,7 @@
   ],
   "dependencies": {
     "deep-extend": "^0.6.0",
-    "sugar-chalk": "^1.6.5",
+    "sugar-chalk": "^1.6.7",
     "yeoman-generator": "^5.4.2"
   },
   "devDependencies": {
@@ -65,8 +65,8 @@
     "ora": "^6.0.1",
     "pinst": "^2.1.6",
     "remark-cli": "^10.0.0",
-    "remark-lint": "^9.0.1",
-    "remark-preset-lint-markdown-style-guide": "^5.0.1",
+    "remark-lint": "^9.1.0",
+    "remark-preset-lint-markdown-style-guide": "^5.1.0",
     "rimraf": "^3.0.2",
     "string-sanitizer": "^2.0.2",
     "yeoman-assert": "^3.1.1",
