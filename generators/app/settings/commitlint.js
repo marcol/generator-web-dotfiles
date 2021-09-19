@@ -10,9 +10,9 @@ module.exports = {
   ],
   package: {
     devDependencies: {
-      '@commitlint/cli': '12.1.4',
-      '@commitlint/config-conventional': '12.1.4',
-      husky: '6.0.0'
+      '@commitlint/cli': '13.1.0',
+      '@commitlint/config-conventional': '13.1.0',
+      husky: '7.0.2'
     }
   },
   commands: [

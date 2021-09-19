@@ -18,7 +18,7 @@ module.exports = {
       'eslint-plugin-json-format': '^2.0.1',
       'eslint-plugin-import': '^2.23.2',
       'eslint-plugin-node': '^11.1.0',
-      'eslint-plugin-promise': '^4.2.1',
+      'eslint-plugin-promise': '^5.1.0',
       'eslint-config-standard': '^16.0.2'
     },
     scripts: {
