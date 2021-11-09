@@ -14,7 +14,7 @@ improve the quality of your commit messages with commitlint.
 First install Yeoman:
 
 ```bash
-yarn add yo --global
+yarn global add yo
 ```
 
 or
@@ -26,7 +26,7 @@ npm install -g yo
 Now install the ultimate generator:
 
 ```bash
-yarn add generator-web-dotfiles --global
+yarn global add generator-web-dotfiles
 ```
 
 or
