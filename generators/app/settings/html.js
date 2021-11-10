@@ -10,7 +10,7 @@ module.exports = {
   ],
   package: {
     devDependencies: {
-      htmlhint: '0.15.2'
+      htmlhint: '0.16.0'
     },
     scripts: {
       'lint:html': 'htmlhint **/*.html'

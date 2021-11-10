@@ -1,6 +1,6 @@
 {
   "name": "generator-web-dotfiles",
-  "version": "3.1.2",
+  "version": "3.5.0",
   "private": false,
   "description": "Add dofiles for your JavaScript/Web projects. It will setup linting for js, css, markdown, html. Add validation to commits and githooks for testing and linting.",
   "keywords": [
