@@ -11,7 +11,7 @@ module.exports = {
   ],
   package: {
     devDependencies: {
-      eslint: '^8.2.0',
+      eslint: '^7.26.0',
       'eslint-plugin-html': '^6.1.2',
       'eslint-plugin-markdown': '^2.1.0',
       'eslint-plugin-filenames': '^1.3.2',
