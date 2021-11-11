@@ -15,8 +15,7 @@ module.exports = {
       'stylelint-config-standard': '^23.0.0'
     },
     scripts: {
-      'lint:css': 'stylelint **/*.html **/*.css --allow-empty-input',
-      lint: 'yarn lint:css'
+      'lint:css': 'stylelint **/*.html **/*.css --allow-empty-input'
     }
   }
 }
