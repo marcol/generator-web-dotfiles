@@ -11,7 +11,9 @@ describe('Test commitlint', () => {
     assert.file([
       path.join(__dirname, '.tmp/.husky/commit-msg'),
       path.join(__dirname, '.tmp/.husky/pre-commit'),
-      path.join(__dirname, '.tmp/.husky/pre-push')
+      path.join(__dirname, '.tmp/.husky/pre-push'),
+      path.join(__dirname, '.tmp/actions/commit.js'),
+      path.join(__dirname, '.tmp/actions/push.js')
     ])
   })
 

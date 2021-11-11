@@ -6,13 +6,22 @@ module.exports = {
     default: true
   },
   files: [
-    '.commitlintrc.json'
+    '.commitlintrc.json',
+    'actions/commit.js',
+    'actions/push.js'
   ],
   package: {
     devDependencies: {
-      '@commitlint/cli': '14.1.0',
-      '@commitlint/config-conventional': '14.1.0',
-      husky: '7.0.4'
+      '@commitlint/cli': '^14.1.0',
+      '@commitlint/config-conventional': '^14.1.0',
+      husky: '^7.0.4',
+      shelljs: '^0.8.4',
+      'sugar-chalk': '^1.6.7',
+      listr: '^0.14.3'
+
+    },
+    scripts: {
+      test: 'exit 0;'
     }
   },
   commands: [
@@ -30,11 +39,11 @@ module.exports = {
     },
     {
       cmd: 'yarn',
-      args: ['husky', 'add', '.husky/pre-commit', 'yarn lint']
+      args: ['husky', 'add', '.husky/pre-commit', 'node actions/commit']
     },
     {
       cmd: 'yarn',
-      args: ['husky', 'add', '.husky/pre-push', 'yarn test']
+      args: ['husky', 'add', '.husky/pre-push', 'node actions/push']
     }
   ]
 }
