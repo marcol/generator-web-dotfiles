@@ -5,7 +5,7 @@
  const sugar = require('sugar-chalk')
  const Runner = require('listr')
  
- sugar.info('Creating new release')
+ sugar.info('Checking push')
  
  /**
   * Handle promosise and log progress
