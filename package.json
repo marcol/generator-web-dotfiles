@@ -73,5 +73,7 @@
     "yeoman-environment": "^3.9.1",
     "yeoman-test": "^6.3.0"
   },
-  "resolutions": {}
+  "resolutions": {
+    "**/node-fetch": "^2.6.7"
+  }
 }
