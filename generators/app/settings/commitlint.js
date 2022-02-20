@@ -12,8 +12,8 @@ module.exports = {
   ],
   package: {
     devDependencies: {
-      '@commitlint/cli': '^14.1.0',
-      '@commitlint/config-conventional': '^14.1.0',
+      '@commitlint/cli': '^16.2.1',
+      '@commitlint/config-conventional': '^16.2.1',
       husky: '^7.0.4',
       shelljs: '^0.8.4',
       'sugar-chalk': '^1.6.7',

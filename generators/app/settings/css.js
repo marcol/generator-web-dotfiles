@@ -12,7 +12,7 @@ module.exports = {
   package: {
     devDependencies: {
       stylelint: '^14.0.1',
-      'stylelint-config-standard': '^23.0.0'
+      'stylelint-config-standard': '^25.0.0'
     },
     scripts: {
       'lint:css': 'stylelint **/*.html **/*.css --allow-empty-input'
