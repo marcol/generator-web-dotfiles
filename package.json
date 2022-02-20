@@ -1,6 +1,6 @@
 {
   "name": "generator-web-dotfiles",
-  "version": "3.5.1",
+  "version": "3.5.2",
   "private": false,
   "description": "Add dofiles for your JavaScript/Web projects. It will setup linting for js, css, markdown, html. Add validation to commits and githooks for testing and linting.",
   "keywords": [
@@ -44,23 +44,23 @@
   "dependencies": {
     "deep-extend": "^0.6.0",
     "sugar-chalk": "^1.6.7",
-    "yeoman-generator": "^5.5.2"
+    "yeoman-generator": "^5.6.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.2",
-    "@commitlint/config-conventional": "^16.0.0",
-    "eslint": "^8.7.0",
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "eslint": "^8.9.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-filenames": "^1.3.2",
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jest": "^25.7.0",
+    "eslint-plugin-jest": "^26.1.1",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^2.2.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "husky": "^7.0.4",
-    "jest": "^27.4.7",
+    "jest": "^27.5.1",
     "listr": "^0.14.3",
     "ora": "^6.0.1",
     "pinst": "^2.1.6",
@@ -70,11 +70,8 @@
     "rimraf": "^3.0.2",
     "string-sanitizer": "^2.0.2",
     "yeoman-assert": "^3.1.1",
-    "yeoman-environment": "^3.8.1",
-    "yeoman-test": "^6.2.0"
+    "yeoman-environment": "^3.9.1",
+    "yeoman-test": "^6.3.0"
   },
-  "resolutions": {
-    "**/ansi-regex": "^5.0.1",
-    "**/shelljs": "^0.8.5"
-  }
+  "resolutions": {}
 }
